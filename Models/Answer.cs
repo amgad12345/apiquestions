@@ -15,7 +15,7 @@ namespace apiquestions.Models
 
     public decimal VoteAnswer { get; set; }
 
-   // public int QuestionId { get; set; }//////////////
+    public int QuestionId { get; set; }
     public Question Question { get; set; }
 
 
