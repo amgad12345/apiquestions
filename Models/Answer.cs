@@ -10,8 +10,8 @@ namespace apiquestions.Models
   {
     public int Id { get; set; }
 
-    
-    public string AnswerString { get; set; } 
+
+    public string AnswerString { get; set; }
 
     public decimal VoteAnswer { get; set; }
 
@@ -20,6 +20,6 @@ namespace apiquestions.Models
 
 
   }
-  
+
 
 }
