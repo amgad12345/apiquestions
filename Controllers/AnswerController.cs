@@ -23,7 +23,7 @@ namespace apiquestions.Controllers
 
     
     [HttpPost]
-    public ActionResult CreateAnswer(NewAnswerViewModel answer)
+    public ActionResult CreateAnswer(ViewModels.NewAnswerViewModel answer)
     {
       var aw = new Answer
       {

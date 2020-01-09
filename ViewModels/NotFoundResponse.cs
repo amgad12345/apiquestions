@@ -1,7 +1,7 @@
-  
+
 using System;
 
-namespace HikingTrailApi.ViewModels
+namespace apiquestions.ViewModels
 {
   public class NotFoundResponse
   {
