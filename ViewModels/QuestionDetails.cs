@@ -10,7 +10,7 @@ namespace apiquestions.ViewModels
     public int Id { get; set; }
 
 
-
+    public string QuestionTitle { get; set; }
 
     public string QuestionString { get; set; }
 

@@ -58,5 +58,23 @@ namespace apiquestions.Controllers
         return Ok(answer);
       }
     }
+
+[HttpDelete("{id}")]
+    public ActionResult DeleteAnswer(int id)
+    {
+      var db = new DatabaseContext();
+      var answer = db.Answers.FirstOrDefault(ar => ar.Id == id);
+      if (answer == null)
+      {
+        return NotFound();
+      }
+      else
+      {
+        db.Answers.Remove(answer);
+        db.SaveChanges();
+        return Ok();
+      }
+    }
+
   }
 }

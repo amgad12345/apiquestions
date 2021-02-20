@@ -1,7 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+
 using System.Text.Json.Serialization;
+
 
 namespace apiquestions.Models
 {
@@ -16,6 +15,8 @@ namespace apiquestions.Models
     public decimal VoteAnswer { get; set; }
 
     public int QuestionId { get; set; }
+
+    [JsonIgnore]
     public Question Question { get; set; }
 
 
